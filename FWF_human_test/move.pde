@@ -21,10 +21,10 @@ int sit   = 0;//しゃがみ
 int sitSpeed;//移動速度保存
 boolean sitting = false;//しゃがみ中
 
-CharaHair first = new CharaHair(hip-5, y-tall +sit*3 - 7.0 , 20, 2, 10);//髪のクラス生成　ｘ、ｙ、長さ、単位長さ、ボリューム (ボリューム要修正：横幅を頭幅にそろえる)
+CharaHair first = new CharaHair(hip-5, y-tall +sit*3 - 7.0 , 10, 2, 10);//髪のクラス生成　ｘ、ｙ、長さ、単位長さ、ボリューム (ボリューム要修正：横幅を頭幅にそろえる)
 CharaCloth firstCloth = new CharaCloth(hip, y-tall/2 +sit*2 ,7, 5, 0,0);//腰ｘ、ｙ、長さ、基準、左足、右足
 
-float gravity=1;//重力の強さ　髪と移動速度に関係する予定
+float gravity=5;//重力の強さ　髪と移動速度に関係する予定
 
 void move() {
 
